@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Van Truong - Web/Mobile Developer</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<h1>Van Truong</h1>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section id="about">
+				<div class="pic-bg">
+					<!-- image here -->
+				</div>
+				<div class="intro">
+					<h2>Hey there! 👋</h2>
+					<h3>I'm Van, a Web & Mobile Developer.</h3>
+					<p>
+						I help businesses and entrepreneurs bring their ideas to life
+						through beautiful, functional websites and mobile apps. From concept
+						to launch, I'm here to make your digital dreams a reality.
+					</p>
+					<a
+						class="cta-btn cta-btn-filled resume"
+						href="./assets/Van Truong Resume.pdf"
+						target="_blank"
+					>
+						View my Resume <i class="fa-solid fa-square-arrow-up-right"></i>
+					</a>
+				</div>
+			</section>
+
+			<section id="services">
+				<h2>How Can I Help You?</h2>
+				<div class="services-container">
+					<div class="card service-card">
+						<span class="service-icon">🎨</span>
+						<h3>Design to Code</h3>
+						<p>
+							Have Figma designs ready? I'll transform them into pixel-perfect,
+							responsive websites and mobile apps with clean, maintainable code.
+						</p>
+					</div>
+
+					<div class="card service-card">
+						<span class="service-icon">🛬</span>
+						<h3>Landings Pages & Websites</h3>
+						<p>
+							Create high-converting landing pages and complete websites. Fast
+							loading, mobile-optimized, and built for conversions.
+						</p>
+					</div>
+
+					<div class="card service-card">
+						<span class="service-icon">🌐</span>
+						<h3>Full-Stack Web Apps</h3>
+						<p>
+							Develop complete web applications with React/Vue frontends,
+							Express.js backends, user authentication, and database management.
+						</p>
+					</div>
+
+					<div class="card service-card">
+						<span class="service-icon">📱</span>
+						<h3>Full-Stack Mobile Apps</h3>
+						<p>
+							Build complete iOS and Android apps with backend APIs, database
+							integration, and native features like HealthKit, camera, and GPS
+							using React Native.
+						</p>
+					</div>
+
+					<div class="card service-card">
+						<span class="service-icon">💡</span>
+						<h3>Prototyping & MVP Development</h3>
+						<p>
+							Have an app idea? I'll help you define the features, create the
+							user flow, and build a fully working product from concept to
+							launch.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="projects">
+				<h2>Check Out My Recent Projects</h2>
+				<div class="projects-container">
+					<div class="card project-card">
+						<div
+							class="project-img"
+							onclick="openModal('media-communications', 0)"
+						>
+							<img
+								src="./assets/screenshots/media-communications/thumbnail.png"
+								class="thumbnail-img"
+							/>
+							<div class="project-links">
+								<p class="project-link-icon disabled">
+									<i class="fa-solid fa-lock"></i>
+								</p>
+								<p class="project-link-icon">
+									<a
+										href="www.google.com"
+										target="_blank"
+										onclick="event.stopPropagation()"
+										><i class="fa-solid fa-link"></i
+									></a>
+								</p>
+							</div>
+						</div>
+						<div class="project-info">
+							<h3>Media Communciations Website</h3>
+							<p>
+								A platform for users to learn about and voice their opinions on
+								educations policies that are being currently reviewed.
+							</p>
+						</div>
+						<div class="tech-stack">
+							<img
+								src="./assets/icons/next.png"
+								class="tech-icon"
+								title="NextJS"
+							/>
+							<img
+								src="./assets/icons/react.png"
+								class="tech-icon"
+								title="React"
+							/>
+							<img
+								src="./assets/icons/ts.png"
+								class="tech-icon"
+								title="TypeScript"
+							/>
+							<img
+								src="./assets/icons/postgresql.png"
+								class="tech-icon"
+								title="PostgreSQL"
+							/>
+							<img
+								src="./assets/icons/tailwind.png"
+								class="tech-icon"
+								title="Tailwind CSS"
+							/>
+						</div>
+					</div>
+
+					<div class="card project-card">
+						<div class="project-img" onclick="openModal('pokesteps', 1)">
+							<img
+								src="./assets/screenshots/pokesteps/goal-met.png"
+								class="thumbnail-img"
+							/>
+							<div class="project-links">
+								<p class="project-link-icon">
+									<a
+										href="https://github.com/vtruo009/poke-steps"
+										target="_blank"
+										onclick="event.stopPropagation()"
+										><i class="fa-brands fa-github"></i
+									></a>
+								</p>
+								<p class="project-link-icon disabled">
+									<i class="fa-solid fa-mobile-screen-button"></i>
+								</p>
+							</div>
+						</div>
+						<div class="project-info">
+							<h3>Pokesteps</h3>
+							<p>
+								iOS app that turns routine fitness tasks like walking into a fun
+								and engaging experience by meeting daily step goals to unlock
+								the original 151 Pokémons.
+							</p>
+						</div>
+						<div class="tech-stack">
+							<img
+								src="./assets/icons/xcode.png"
+								class="tech-icon"
+								title="Xcode"
+							/>
+							<img
+								src="./assets/icons/swift.png"
+								class="tech-icon"
+								title="Swift"
+							/>
+							<img
+								src="./assets/icons/firebase.png"
+								class="tech-icon"
+								title="Firebase"
+							/>
+						</div>
+					</div>
+
+					<div class="card project-card">
+						<div class="project-img" onclick="window.scrollTo(0,0)">
+							<img
+								src="./assets/screenshots/portfolio/thumbnail.png"
+								class="thumbnail-img"
+							/>
+							<div class="project-links">
+								<p class="project-link-icon">
+									<a href="" onclick="event.stopPropagation()"
+										><i class="fa-brands fa-github"></i
+									></a>
+								</p>
+								<p class="project-link-icon">
+									<a href="#" onclick="event.stopPropagation()"
+										><i class="fa-solid fa-link"></i
+									></a>
+								</p>
+							</div>
+						</div>
+						<div class="project-info">
+							<h3>vandtruong.com</h3>
+							<p>
+								Interactive portfolio website with smooth animations to showcase
+								freelance and personal projects.
+							</p>
+							<div class="tech-stack">
+								<img
+									src="./assets/icons/html.png"
+									class="tech-icon"
+									title="HTML5"
+								/>
+								<img
+									src="./assets/icons/css.png"
+									class="tech-icon"
+									title="CSS3"
+								/>
+								<img
+									src="./assets/icons/js.png"
+									class="tech-icon"
+									title="JavaScript"
+								/>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="card project-card">
+						<div class="project-img" onclick="openModal('spoolify', 2)">
+							<div class="project-links">
+								<p class="project-link-icon">
+									<a
+										href="www.google.com"
+										target="_blank"
+										onclick="event.stopPropagation()"
+										><i class="fa-brands fa-github"></i
+									></a>
+								</p>
+								<p class="project-link-icon">
+									<a href="" target="_blank" onclick="event.stopPropagation()">
+										<i class="fa-solid fa-mobile-screen-button"></i>
+									</a>
+								</p>
+							</div>
+							<img />
+						</div>
+						<div class="project-info">
+							<h3>Spoolify</h3>
+							<p>
+								A mobile app that aims to help 3D printing hobbists and business
+								owners manage their machines and inventory.
+							</p>
+							<div class="tech-stack">
+								<img
+									src="./assets/icons/expo.png"
+									class="tech-icon"
+									title="Expo"
+								/>
+								<img
+									src="./assets/icons/react.png"
+									class="tech-icon"
+									title="React Native"
+								/>
+								<img
+									src="./assets/icons/ts.png"
+									class="tech-icon"
+									title="TypeScript"
+								/>
+								<img
+									src="./assets/icons/appwrite.png"
+									class="tech-icon"
+									title="Appwrite"
+								/>
+								<img
+									src="./assets/icons/tailwind.png"
+									class="tech-icon"
+									title="Tailwind CSS"
+								/>
+							</div>
+						</div>
+					</div>
+
+					<div class="card project-card">
+						<div class="project-img" onclick="openModal('camlock', 3)">
+							<div class="project-links">
+								<p class="project-link-icon">
+									<a href="" target="_blank" onclick="event.stopPropagation()"
+										><i class="fa-brands fa-github"></i
+									></a>
+								</p>
+								<p class="project-link-icon">
+									<a href="" target="_blank" onclick="event.stopPropagation()">
+										<i class="fa-solid fa-mobile-screen-button"></i>
+									</a>
+								</p>
+							</div>
+							<img />
+						</div>
+						<div class="project-info">
+							<h3>CamLock</h3>
+							<p>
+								iOS app that helps users reduce screentime and doomscrolling,
+								resulting in more mindful use of their time and increase
+								productivity.
+							</p>
+							<div class="tech-stack">
+								<img
+									src="./assets/icons/xcode.png"
+									class="tech-icon"
+									title="Xcode"
+								/>
+								<img
+									src="./assets/icons/swift.png"
+									class="tech-icon"
+									title="Swift"
+								/>
+								<img
+									src="./assets/icons/firebase.png"
+									class="tech-icon"
+									title="Firebase"
+								/>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</section>
+
+			<section id="contact">
+				<h2>Let's Build Something Amazing Together</h2>
+				<div class="form-container">
+					<div class="form-verbage">
+						<p class="contact-cta">Ready to talk about your project?</p>
+						<p class="contact-cta highlight">
+							I'd love to hear about your ideas and discuss how we can bring
+							them to life.
+						</p>
+						<div class="social-container">
+							<a href="https://linkedin.com/in/vdtruong" target="_blank"
+								><i class="fa-brands fa-square-linkedin"></i
+							></a>
+							<a href="https://github.com/vtruo009" target="_blank"
+								><i class="fa-brands fa-github"></i
+							></a>
+							<a href="mailto:vandtruong414@gmail.com"
+								><i class="fa-solid fa-envelope"></i
+							></a>
+						</div>
+					</div>
+
+					<form
+						id="contact-form"
+						class="contact-form"
+						action="https://api.web3forms.com/submit"
+						method="POST"
+					>
+						<input
+							type="hidden"
+							name="access_key"
+							value="acd61c5a-81e2-4d92-bc6d-dc7076727bcd"
+						/>
+
+						<div class="form-group">
+							<label for="name" class="form-label">Name</label>
+							<input
+								title="name"
+								name="name"
+								type="text"
+								placeholder="John Doe"
+								class="form-input"
+							/>
+						</div>
+
+						<div class="form-group">
+							<label for="email" class="form-label">Email</label>
+							<input
+								title="email"
+								name="email"
+								type="email"
+								placeholder="user@example.com"
+								class="form-input"
+							/>
+						</div>
+
+						<div class="form-group">
+							<label for="project-type" class="form-label">Project Type</label>
+							<select id="project-type" name="project-type" class="form-input">
+								<option disabled selected>Select a project type</option>
+								<option value="landing-page">Landing Page</option>
+								<option value="prototyping">Prototyping</option>
+								<option value="web-dev">Web Development</option>
+								<option value="mobile-dev">Mobile Development</option>
+								<option value="Other">Other</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label for="message" class="form-label">Message</label>
+							<textarea
+								title="message"
+								name="message"
+								placeholder="Tell me about your awesome project or idea..."
+								class="form-input"
+							></textarea>
+						</div>
+
+						<button
+							type="submit"
+							form="contact-form"
+							class="submit-btn cta-btn-filled"
+						>
+							Send Message
+						</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<a href="#">Back to top<i class="fa-solid fa-arrow-up"></i></a>
+		</footer>
+
+		<!-- Project Modals -->
+		<div id="media-communications" class="modal">
+			<i
+				class="fa-solid fa-xmark modal-close"
+				onclick="closeModal('media-communications')"
+			></i>
+			<!-- <div class="modal-content card"> -->
+			<div class="modal-content">
+				<!-- Images -->
+				<div class="media-communications modal-img">
+					<div class="numbertext">1 / 2</div>
+					<img
+						class="landscape"
+						src="./assets/screenshots/media-communications/getting-started.png"
+					/>
+				</div>
+				<div class="media-communications modal-img">
+					<div class="numbertext">2 / 2</div>
+					<img
+						class="landscape"
+						src="./assets/screenshots/media-communications/article-list.png"
+					/>
+				</div>
+				<div class="media-communications modal-img">
+					<div class="numbertext">2 / 2</div>
+					<img
+						class="landscape"
+						src="./assets/screenshots/media-communications/article.png"
+					/>
+				</div>
+
+				<!-- Prev & Next Buttons -->
+				<a class="prev" onclick="plusSlides(-1)">
+					<i class="fa-solid fa-chevron-left"></i>
+				</a>
+				<a class="next" onclick="plusSlides(1)">
+					<i class="fa-solid fa-chevron-right"></i>
+				</a>
+			</div>
+		</div>
+
+		<div id="pokesteps" class="modal">
+			<i
+				class="fa-solid fa-xmark modal-close"
+				onclick="closeModal('pokesteps')"
+			></i>
+			<!-- <div class="modal-content card"> -->
+			<div class="modal-content">
+				<!-- Images -->
+				<div class="pokesteps modal-img">
+					<div class="numbertext">1 / 7</div>
+					<img
+						class="portrait"
+						src="./assets/screenshots/pokesteps/homescreen.png"
+					/>
+				</div>
+				<div class="pokesteps modal-img">
+					<div class="numbertext">2 / 7</div>
+					<img
+						class="portrait"
+						src="./assets/screenshots/pokesteps/edit-goal.png"
+					/>
+				</div>
+				<div class="pokesteps modal-img">
+					<div class="numbertext">3 / 7</div>
+					<img
+						class="portrait"
+						src="./assets/screenshots/pokesteps/goal-met.png"
+					/>
+				</div>
+				<div class="pokesteps modal-img">
+					<div class="numbertext">4 / 7</div>
+					<img
+						class="portrait"
+						src="./assets/screenshots/pokesteps/unlock-pokemon.png"
+					/>
+				</div>
+				<div class="pokesteps modal-img">
+					<div class="numbertext">5 / 7</div>
+					<img
+						class="portrait"
+						src="./assets/screenshots/pokesteps/pokedex.png"
+					/>
+				</div>
+				<div class="pokesteps modal-img">
+					<div class="numbertext">6 / 7</div>
+					<img
+						class="portrait"
+						src="./assets/screenshots/pokesteps/pokemon-details.png"
+					/>
+				</div>
+				<div class="pokesteps modal-img">
+					<div class="numbertext">7 / 7</div>
+					<img
+						class="portrait"
+						src="./assets/screenshots/pokesteps/search.png"
+					/>
+				</div>
+
+				<!-- Prev & Next Buttons -->
+				<a class="prev" onclick="plusSlides(-1)">
+					<i class="fa-solid fa-chevron-left"></i>
+				</a>
+				<a class="next" onclick="plusSlides(1)">
+					<i class="fa-solid fa-chevron-right"></i>
+				</a>
+			</div>
+		</div>
+
+		<div id="spoolify" class="modal">
+			<i
+				class="fa-solid fa-xmark modal-close"
+				onclick="closeModal('spoolify')"
+			></i>
+			<!-- <div class="modal-content card"> -->
+			<div class="modal-content">
+				<!-- Images -->
+				<div class="spoolify modal-img">
+					<div class="numbertext">1 / 2</div>
+					<img
+						src="./assets/screenshots/pokesteps/Screenshot 2025-07-26 at 6.25.48 PM.png"
+					/>
+				</div>
+				<div class="spoolify modal-img">
+					<div class="numbertext">2 / 2</div>
+					<img
+						src="./assets/screenshots/pokesteps/Screenshot 2025-08-22 at 3.29.58 PM.png"
+					/>
+				</div>
+
+				<!-- Prev & Next Buttons -->
+				<a class="prev" onclick="plusSlides(-1)">
+					<i class="fa-solid fa-chevron-left"></i>
+				</a>
+				<a class="next" onclick="plusSlides(1)">
+					<i class="fa-solid fa-chevron-right"></i>
+				</a>
+			</div>
+		</div>
+
+		<div id="camlock" class="modal">
+			<i
+				class="fa-solid fa-xmark modal-close"
+				onclick="closeModal('camlock')"
+			></i>
+			<!-- <div class="modal-content card"> -->
+			<div class="modal-content">
+				<!-- Images -->
+				<div class="camlock modal-img">
+					<div class="numbertext">1 / 2</div>
+					<img
+						src="./assets/screenshots/pokesteps/Screenshot 2025-07-26 at 6.25.48 PM.png"
+					/>
+				</div>
+				<div class="camlock modal-img">
+					<div class="numbertext">2 / 2</div>
+					<img
+						src="./assets/screenshots/pokesteps/Screenshot 2025-08-22 at 3.29.58 PM.png"
+					/>
+				</div>
+
+				<!-- Prev & Next Buttons -->
+				<a class="prev" onclick="plusSlides(-1)">
+					<i class="fa-solid fa-chevron-left"></i>
+				</a>
+				<a class="next" onclick="plusSlides(1)">
+					<i class="fa-solid fa-chevron-right"></i>
+				</a>
+			</div>
+		</div>
+
+		<script src="./main.js"></script>
+		<script
+			src="https://kit.fontawesome.com/b9ce9a52c9.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
