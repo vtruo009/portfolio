@@ -1,6 +1,7 @@
 let slideIndex = [1, 1, 1, 1, 1, 1];
 let slideId = ['media-communications', 'pokesteps', 'spoolify', 'camlock'];
 var currSlide = 0;
+let backToTopBtn = document.getElementById('back-to-top-btn');
 
 // Next/previous controls
 function plusSlides(n) {
@@ -61,4 +62,17 @@ window.onclick = function (event) {
 	}
 };
 
-function showImages(project) {}
+window.onscroll = function () {
+	scrollFunction();
+};
+
+function scrollFunction() {
+	if (
+		document.body.scrollTop > 500 ||
+		document.documentElement.scrollTop > 500
+	) {
+		backToTopBtn.style.display = 'block';
+	} else {
+		backToTopBtn.style.display = 'none';
+	}
+}
